@@ -40,6 +40,8 @@ func printThisWeekActivitySummaries(){
         guard let summaries = summaries else {
             return
         }
-        return summaries
+        for summary in summaries {
+            print(summary)
+        }
     }
 }
