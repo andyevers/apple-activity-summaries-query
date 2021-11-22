@@ -38,6 +38,7 @@ func printThisWeekActivitySummaries(){
     }
     executeActivitySummariesQuery(startDate: startDate, endDate: Date()) { (query, summaries, error) -> Void in
         guard let summaries = summaries else {
+            print("No summaries found")
             return
         }
         for summary in summaries {
